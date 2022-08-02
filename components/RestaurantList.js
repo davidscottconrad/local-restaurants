@@ -42,7 +42,7 @@ export default function RestaurantList() {
 
     if (loading) return <div>lading</div>
 
-    const listItems = posts.map((p, i) => {
+    const listItems = posts.map((p) => {
         return (
             <div id="rest-card" className='justify-content-center align-items-center mb-3 mt-3'>
                 <div key={p.id} style={{ borderStyle: 'solid' }} className="card p-3">
