@@ -33,9 +33,9 @@ export default function RestaurantList() {
         getDailySpecials().then((a) => {
             setLoading(false)
             setposts(a)
-        })
+        }).catch(error => console.log('getDailySpecials Failed' + error))
 
-        writeDailySpecial(docData1)
+        //writeDailySpecial(docData1)
 
 
     }, [])
@@ -44,8 +44,8 @@ export default function RestaurantList() {
 
     const listItems = posts.map((p) => {
         return (
-            <div id="rest-card" className='justify-content-center align-items-center mb-3 mt-3'>
-                <div key={p.id} style={{ borderStyle: 'solid' }} className="card p-3">
+            <div id="rest-card" key={p.id} className='justify-content-center align-items-center mb-3 mt-3'>
+                <div style={{ borderStyle: 'solid' }} className="card p-3">
                     <p>{p.description}</p>
                     <p>{p.milk}</p>
                     <p>{p.price}</p>
