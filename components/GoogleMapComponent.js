@@ -24,5 +24,5 @@ export default function GoogleMapComponent() {
 function Map() {
     const center = { lat: 48.8584, lng: 2.2945 }
 
-    return <GoogleMap center={center} zoom={15} mapContainerStyle={{ width: '100%', height: '100%' }}></GoogleMap>
+    return <GoogleMap mapId={mapId} center={center} zoom={15} mapContainerStyle={{ width: '100%', height: '100%' }}></GoogleMap>
 }

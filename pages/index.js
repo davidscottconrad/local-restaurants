@@ -32,7 +32,7 @@ export default function Home() {
       <div className='container justify-content-center align-items-center' >
         <div className='row'>
           <div className='col-md-9'>
-            <div style={{ height: "100%", width: '100%', minHeight: '35vh', backgroundColor: "red" }}>
+            <div style={{ height: "100%", width: '100%', minHeight: '35vh' }}>
               <GoogleMapComponent ></GoogleMapComponent>
             </div>
           </div>
