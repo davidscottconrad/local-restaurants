@@ -25,21 +25,20 @@ export default function Home() {
 
 
   return (
-    <div>
-      <div>
-        <h1 className='m-5' style={{ textAlign: "center" }}>Local Restaurants</h1>
+    <>
+    {/* <div>
+        <h1 className='m-1' style={{ textAlign: "center" }}>Local Restaurants</h1>
+      </div> */}
+    <div className='container1'>
+      
+      <div className='controls'>
+      <RestaurantList ></RestaurantList>
       </div>
-      <div className='container justify-content-center align-items-center' >
-        <div className='row'>
-          <div className='col-md-9'>
-            <div style={{ height: "100%", width: '100%', minHeight: '35vh' }}>
+      <div className='map' >      
               <GoogleMapComponent ></GoogleMapComponent>
-            </div>
-          </div>
-          <RestaurantList ></RestaurantList>
-        </div>
+          {/*  */}
       </div>
     </div>
-
+    </>
   )
 }

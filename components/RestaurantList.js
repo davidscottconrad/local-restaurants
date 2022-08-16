@@ -44,8 +44,8 @@ export default function RestaurantList() {
 
     const listItems = posts.map((p) => {
         return (
-            <div id="rest-card" key={p.id} className='justify-content-center align-items-center mb-3 mt-3'>
-                <div style={{ borderStyle: 'solid' }} className="card p-3">
+            <div key={p.id}>
+                <div id="rest-card">
                     <p>{p.description}</p>
                     <p>{p.milk}</p>
                     <p>{p.price}</p>
@@ -56,12 +56,12 @@ export default function RestaurantList() {
     })
 
     return (
-        <div className='col-md-3'>
+        <>
 
 
             {listItems}
 
-        </div>
+        </>
     )
 
 }
